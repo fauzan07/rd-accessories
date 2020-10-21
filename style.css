@@ -1,0 +1,717 @@
+html {scroll-behavior: smooth;}
+body{
+    background: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    text-transform: capitalize;
+}
+h1, .h1 {
+    font-size: 40px; 
+    color: #000;
+}
+h2, .h2 {
+    font-size: 35px; 
+    color: #000;
+}
+
+h3, .h3 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+h4, .h4{
+    font-size: 15px; 
+    /* line-height: 30px; */
+}
+
+p,li {
+    color: #444;
+    font-size: 15px;
+}
+a {
+    color: #444; 
+    font-size: 13px;
+    text-decoration: none; 
+    transition: 0.3s;
+    font-family: 'Dosis', sans-serif;
+}
+
+button.bannerbtn2 {
+    /*font-family: 'Abel', sans-serif;*/
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+button.bannerbtn2:hover {
+    background: #53ba00;
+    color: #fff;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #DC143C;
+    cursor: pointer;
+  }
+  .topbtn button:hover{
+      background: #000;
+      color: #fff;
+  }
+/*--------section header start---------*/
+
+.nav-link{
+    color: #000;
+    font-size: 13px;
+    font-family: 'Dosis', sans-serif;
+    padding-right: 12px;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #DC143C;
+}
+
+.w-100 {
+    width: 90%!important;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+   .home_nav{
+     padding-left: 8px;
+   }
+}
+
+.navbar {
+    padding: 0;
+}
+
+.bg-color{
+    background: #111213;
+    border-bottom: 3px solid #DC143C;
+  }
+  
+
+/*--------section header end---------*/
+
+/*--------section banners start---------*/
+
+.banner{
+    background-image: url(images/home-imgs/homepage-asset-1.jpg);
+    width: 100%;
+    height: 100vh;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 280px 0px;
+
+}
+
+.btn-start {
+        background-color: #fff;
+        color: #002633;
+        position: relative;
+        top: 141px;
+        left: 624px;
+        z-index: 1;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding: 0px 16px;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 0px;
+        display: inline-block;
+}
+
+/*--------section banners end---------*/
+
+/*--------main_grid section start---------*/
+.main_grid{
+    background-image: url(images/prod-area-bg.jpg);
+    width: 100%;
+    height: 100vh;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 280px 0px; */
+}
+
+.project-filter{
+    display:inline-block;
+}
+
+.list-group-item {
+    border: none; 
+}
+
+.latestproduct-grid{
+    /*font-family: 'Abel', sans-serif;*/
+    text-align: center;
+}
+.latestproduct-grid .latestproduct-image{
+    position: relative;
+    overflow: hidden;
+}
+.latestproduct-grid .latestproduct-image a.latestimage{ display: block; }
+.latestproduct-grid .latestproduct-image a.latestimage:before{
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 0.4s ease-in-out 0s;
+}
+.latestproduct-grid:hover .latestproduct-image a.latestimage:before{ opacity: 1; }
+.latestproduct-grid .latestproduct-image img{
+    width: 100%;
+    height: auto;
+}
+.latestproduct-image .pic-1{
+    backface-visibility: hidden;
+    transition: all 0.5s;
+}
+
+.latestproduct-grid .add-to-cart{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 3px;
+    width: 340px;
+    padding: 8px 10px;
+    border-radius: 2px;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    z-index: 1;
+    transition: all .5s ease;
+}
+.latestproduct-grid:hover .add-to-cart{
+    opacity: 1;
+    top: 50%;
+}
+
+
+
+@media only screen and (max-width:990px){
+    .latestproduct-grid{ margin: 0 0 30px; }
+}
+/*--------main_grid section end---------*/
+
+/*--------section cable-acc start---------*/
+
+.powerbank,.powerbank-images{
+    background-color: #f5e6d3;
+}
+
+.linehr{
+    background-color: #47b5cf;
+}
+
+.key-element1{
+    position: relative;
+    left: 68px;
+    width: 210px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background: #002633;
+    border-radius: 10px;
+    padding-top: 4px;
+}
+
+.key-element1 h2{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.key-element1-text h3{
+    color: #002633;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.key-element1-icon h4{
+    color: #002633;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 8px ;
+}
+
+.datacable{
+    background-color: #002633;
+}
+
+.key-element2{
+    position: relative;
+    left: 68px;
+    width: 210px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background: #17a3d1;
+    border-radius: 10px;
+    padding-top: 4px;
+}
+
+.key-element2 h2{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.key-element2-text h3{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.key-element2-icon h4{
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 8px ;
+}
+
+.charger,.charger-images{
+    background-color: #d4e2af;
+}
+
+.key-element3{
+    position: relative;
+    left: 68px;
+    width: 210px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background: #3b8168;
+    border-radius: 10px;
+    padding-top: 4px;
+}
+
+.key-element3 h2{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.key-element3-text h3{
+    width: 94%;
+    color: #3b8168;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.key-element3-icon h4{
+    color: #3b8168;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 8px ;
+}
+
+/*--------section cable-acc ends---------*/
+
+/*--------section wearable start---------*/
+.smart-watch-text{
+padding-top: 110px;
+}
+
+.smartwatch{
+    background-color: #f2dcae;
+}
+
+.key-element4{
+    position: relative;
+    left: 68px;
+    width: 210px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background: #166da1;
+    border-radius: 10px;
+    padding-top: 4px;
+}
+
+.key-element4 h2{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.key-element4-text h3{
+    color: #166da1;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.key-element4-icon h4{
+    color: #166da1;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 8px ;
+}
+
+
+/*--------section wearable ends---------*/
+
+
+/*--------section wired-audio start---------*/
+.wired-earphone{
+    background-color: #08354d;
+}
+
+.headphone,.headphone-images{
+    background-color: #f5e1c9;
+}
+
+.key-element5 h2{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.key-element5-text h3{
+    color: #0a364d;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.key-element5-icon h4{
+    color: #0a364d;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 8px ;
+}
+
+/*--------section wired-audio ends---------*/
+
+/*--------section wireless-audio start---------*/
+
+.headphone1,.headphone1-images{
+    background-color: #fef8f6;
+}
+.lheadsetinehr{
+    background-color: #DC143C;
+}
+
+.headset{
+    background-color: #08354d;
+}
+
+.speaker,.speaker-images{
+    background-color: #a2d4c9;
+}
+.speakerlinehr{
+    background-color: #0a364d;
+}
+
+.key-element6 h2{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.key-element6 {
+    position: relative;
+    left: 110px;
+    width: 210px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background: #17a3d1;
+    border-radius: 10px;
+    padding-top: 4px;
+}
+/*--------section wireless-audio ends---------*/
+
+/*--------section contact start---------*/
+.contact p{
+    color: #444;
+    font-size: 15px;
+}
+
+
+button.btn-contact {
+    /*font-family: 'Abel', sans-serif;*/
+    width: 110px;
+    height: 30px;
+    line-height: 11px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 13px;
+    border: none;
+    background: #002633;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 1px;
+}
+button.btn-contact:hover {
+    background: #005580;
+    color: #fff;
+}
+
+.contact-box{
+    position: relative;
+    left: 250px;
+}
+
+.contact-box2{
+    position: relative;
+    right: 550px;
+    top: 55px;
+}
+
+.contact-box{
+    padding: 50px 50px 50px 100px;
+}
+
+.contact-box2{
+    background-color: #002633;
+    color: #fff;
+    /* padding: 10px 15px; */
+}
+.contact-box2 li{
+    padding-bottom: 20px;
+    font-size: 13px;
+} 
+
+.contact-box2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.lower-text{
+    padding-left: 38px;
+}
+/*--------section contact end---------*/
+
+/*--------footer-area start---------*/
+
+.footer-area{ 
+    background-color:#000;
+}
+
+.footer-area a{ 
+    color: #999;
+    text-decoration: none;
+}
+
+.footer-bottom p{ 
+    color: #999;
+}
+
+.footer-area .line{
+    border: 1px;
+    border-style: solid;
+    border-color: #fff;
+    text-align: left;
+    width: 22%;
+}
+
+.footer-info li {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.footer-contact li {
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.footer-widget h4.widget-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    /* padding-bottom: 30px; */
+}
+
+/*--------footer-area end---------*/
+
+@media screen and (max-width: 990px){
+
+    .banner {
+        background-image: url(images/home-imgs/homepage-asset-1.jpg);
+        width: 100%;
+        height: 100vh;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 145px 0px;
+    }
+
+    .btn-start {
+        background-color: #fff;
+        color: #002633;
+        position: relative;
+        top: 75px;
+        left: 352px;
+        z-index: 1;
+        text-transform: uppercase;
+        font-size: 13px;
+        padding: 1px 10px;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 0px;
+        display: inline-block;
+    }
+
+    .key-element1,.key-element2,.key-element3,.key-element4{
+        position: relative;
+        left: 235px;
+        width: 210px;
+        height: 40px;
+    }
+
+    .key-element6 {
+        position: relative;
+        left: 235px;
+        width: 210px;
+        height: 40px;
+    }
+
+    .contact-box {
+        padding: 50px 50px 50px 50px;
+    }
+
+    .contact-box {
+        position: relative;
+        left: 1px;
+    }
+
+    .contact-box2 {
+        position: relative;
+        right: 0px;
+        top: 40px;
+    }
+   
+}
+
+@media screen and (max-width: 600px){
+
+
+    .banner{
+        background-image: url(images/home-imgs/homepage-asset-1.jpg);
+        width: 100%;
+        height: 100vh;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 75px 0px;
+    
+    }
+
+    .btn-start {
+        background-color: #fff;
+        color: #002633;
+        position: relative;
+        top: 39px;
+        left: 175px;
+        z-index: 1;
+        text-transform: uppercase;
+        font-size: 10px;
+        padding: 1px 10px;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 0px;
+        display: inline-block;
+    }
+
+    .smart-watch-text {
+        padding-top: 60px;
+    }
+
+    .key-element1,.key-element2,.key-element3,.key-element4{
+        position: relative;
+        left: 85px;
+        width: 210px;
+        height: 40px;
+    }
+
+    .key-element3-text h3 {
+        width: 100%;
+        color: #3b8168;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .key-element6 {
+        position: relative;
+        left: 90px;
+        width: 210px;
+        height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        border: none;
+        background: #17a3d1;
+        border-radius: 10px;
+        padding-top: 4px;
+    }
+
+    .contact-box {
+        padding: 50px 50px 50px 50px;
+    }
+
+    .contact-box {
+        position: relative;
+        left: 3px;
+    }
+
+    .contact-box2 {
+        position: relative;
+        right: 0px;
+        top: 25px;
+    }
+
+}
+ 
